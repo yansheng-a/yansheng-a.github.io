@@ -1,16 +1,16 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>纯小白的第一步 | 颜笙</title><meta name="author" content="颜笙"><meta name="copyright" content="颜笙"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="在茫茫未来 一定能遇到那个你">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>纯小白的第一步 | 颜笙</title><meta name="author" content="颜笙"><meta name="copyright" content="颜笙"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="对于图像识别分类问题的简单实现以下是我的完整代码使用keras进行搭建更为简易，初学者更快上手体验简单的识别效果 import tensorflow as tf from keras.models import Sequential tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR) from keras.layers im">
 <meta property="og:type" content="article">
 <meta property="og:title" content="纯小白的第一步">
 <meta property="og:url" content="http://example.com/yansheng/20981.html">
 <meta property="og:site_name" content="颜笙">
-<meta property="og:description" content="在茫茫未来 一定能遇到那个你">
+<meta property="og:description" content="对于图像识别分类问题的简单实现以下是我的完整代码使用keras进行搭建更为简易，初学者更快上手体验简单的识别效果 import tensorflow as tf from keras.models import Sequential tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR) from keras.layers im">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/wanyan">
+<meta property="og:image" content="http://example.com/img/wanye.jpeg">
 <meta property="article:published_time" content="2022-10-28T13:43:04.000Z">
-<meta property="article:modified_time" content="2022-10-28T13:43:31.560Z">
+<meta property="article:modified_time" content="2023-04-08T11:22:08.431Z">
 <meta property="article:author" content="颜笙">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/img/wanyan"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/yansheng/20981"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="http://example.com/img/wanye.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/yansheng/20981"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -51,8 +51,8 @@
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2022-10-28 21:43:31'
+  isToc: true,
+  postUpdate: '2023-04-08 19:22:08'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -141,7 +141,136 @@
       }
     }
     detectApple()
-    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/yansheng.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/lanqiao/"><i class="fa-fw fas fa-folder-open"></i><span> 蓝桥</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/wanyan')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">颜笙</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/lanqiao/"><i class="fa-fw fas fa-folder-open"></i><span> 蓝桥</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">纯小白的第一步</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-28T13:43:04.000Z" title="发表于 2022-10-28 21:43:04">2022-10-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-28T13:43:31.560Z" title="更新于 2022-10-28 21:43:31">2022-10-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="纯小白的第一步"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">颜笙</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/yansheng/20981.html">http://example.com/yansheng/20981.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">颜笙</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/wanyan" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/yansheng/16107.html"><img class="next-cover" src="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/yansheng.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">颜笙</div><div class="author-info__description">在茫茫未来 一定能遇到那个你</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yansheng-a/yansheng-a.github.io"><i class="fab fa-github"></i><span>github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><b><font color="#e66b6d">人</font> <font color="#e66d98">生</font> <font color="#e66cc6">无</font> <font color="#cc6de6">常</font> <font color="#9770e6">有</font> <font color="#6d93e6"> </font> <font color="#6fcde6">你</font> <font color="#72e6b6">真</font> <font color="#72e689">好</font> <p align="center"><img src="https://img-blog.csdnimg.cn/f7384c88956d4378b72e47548e19c9f8.gif" width="50" alt="mao"></p> <p align="center">QQ号：1024174747</p></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/yansheng/20981.html" title="纯小白的第一步"><img src="/img/wanyan" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="纯小白的第一步"/></a><div class="content"><a class="title" href="/yansheng/20981.html" title="纯小白的第一步">纯小白的第一步</a><time datetime="2022-10-28T13:43:04.000Z" title="发表于 2022-10-28 21:43:04">2022-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/yansheng/16107.html" title="Hello World"><img src="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/yansheng/16107.html" title="Hello World">Hello World</a><time datetime="2022-10-24T09:25:28.964Z" title="发表于 2022-10-24 17:25:28">2022-10-24</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/wanyan')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 颜笙</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="ture"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/yansheng.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/lanqiao/"><i class="fa-fw fas fa-folder-open"></i><span> 蓝桥</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/wanye.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">颜笙</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/lanqiao/"><i class="fa-fw fas fa-folder-open"></i><span> 蓝桥</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">纯小白的第一步</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-28T13:43:04.000Z" title="发表于 2022-10-28 21:43:04">2022-10-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-08T11:22:08.431Z" title="更新于 2023-04-08 19:22:08">2023-04-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="纯小白的第一步"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="对于图像识别分类问题的简单实现"><a href="#对于图像识别分类问题的简单实现" class="headerlink" title="对于图像识别分类问题的简单实现"></a>对于图像识别分类问题的简单实现</h1><h3 id="以下是我的完整代码"><a href="#以下是我的完整代码" class="headerlink" title="以下是我的完整代码"></a>以下是我的完整代码</h3><p>使用keras进行搭建更为简易，初学者更快上手体验简单的识别效果</p>
+<pre><code>import tensorflow as tf
+from keras.models import Sequential
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+from keras.layers import Dense, Flatten
+from keras.applications.vgg16 import VGG16
+from keras import layers
+from keras import models
+# 加载VGG16模型
+vgg16 = VGG16(weights=&#39;imagenet&#39;, include_top=False, input_shape=(224, 224, 3))
+
+#冻结VGG16模型的所有层
+for layer in vgg16.layers:
+layer.trainable = False
+
+# 创建新的模型
+model = Sequential()
+#创建简单四层卷积池化层，keras有自动计算各层输出图像大小功能
+# model = models.Sequential()
+# model.add(layers.Conv2D(32, (3, 3), activation=&#39;relu&#39;,
+                        #input_shape=(224, 224, 3)))
+# model.add(layers.MaxPooling2D((2, 2)))
+# model.add(layers.Conv2D(64, (3, 3), activation=&#39;relu&#39;))
+# model.add(layers.MaxPooling2D((2, 2)))
+# model.add(layers.Conv2D(128, (3, 3), activation=&#39;relu&#39;))
+# model.add(layers.MaxPooling2D((2, 2)))
+# model.add(layers.Conv2D(128, (3, 3), activation=&#39;relu&#39;))
+# model.add(layers.MaxPooling2D((2, 2)))
+#使用vgg16模型
+model.add(vgg16)
+model.add(Flatten())
+#model.add(layers.Flatten())
+
+# 添加全连接层
+model.add(Dense(256,activation=&#39;relu&#39;))
+
+# 添加输出层
+model.add(Dense(4, activation=&#39;softmax&#39;))
+
+# 编译模型
+#参数：损失函数：categorical_crossentropy（交叉损失熵） 优化器adam，评价函数
+model.compile(loss=&#39;categorical_crossentropy&#39;, optimizer=&#39;adam&#39;, metrics=[&#39;accuracy&#39;]) 
+from keras.preprocessing.image import ImageDataGenerator
+#超参数训练次数
+time=135
+# 数据增强
+#生成一个数据增强器 1.旋转角度 2.随机错切 3.随机缩放 4.随机翻转一半图像
+train_datagen = ImageDataGenerator(rescale=1./255,
+shear_range=0.2,
+zoom_range=0.2,
+horizontal_flip=True)
+
+test_datagen = ImageDataGenerator(rescale=1./255)
+test_datagen1 =ImageDataGenerator(rescale=1./255)
+# 加载训练集和测试集以及额外增加的额外测试集
+#参数：目录，形状，批次，返回类型
+train_set = train_datagen.flow_from_directory(r&#39;C:\Users\LENOVO\车狗猫花\车狗猫花\train&#39;,
+target_size=(224, 224),
+batch_size=32,
+class_mode=&#39;categorical&#39;)
+
+test_set = test_datagen.flow_from_directory(r&#39;C:\Users\LENOVO\车狗猫花\车狗猫花\test&#39;,
+target_size=(224, 224),
+batch_size=32,
+class_mode=&#39;categorical&#39;)
+test_new= test_datagen1.flow_from_directory(r&#39;C:\Users\LENOVO\车狗猫花\车狗猫花\test1&#39;,
+target_size=(224, 224),
+batch_size=32,
+class_mode=&#39;categorical&#39;)
+
+#训练模型，更新模型中的权重，即在使损失函数最小
+#参数 一个sequence即train_set，在epochs执行默认len（sequence）多少次生成器生成数据，迭代次数，验证集合，验证批次
+history = model.fit_generator(train_set,
+steps_per_epoch=time,
+epochs=2,
+validation_data=test_set,
+validation_steps=time)
+
+model.save(&#39;shiyan1vgg.model&#39;)#保存模型
+#函数将对应数字标签转换为中文
+def transform(pred_labels,test_labels):
+if pred_labels==0 :
+pred_labels= &quot;狗&quot;
+if(pred_labels==1):
+pred_labels= &quot;猫&quot;
+if pred_labels==2 :
+pred_labels= &quot;花&quot;
+if pred_labels==3 :
+pred_labels=&quot;车&quot;
+if test_labels==0 :
+test_labels= &quot;狗&quot;
+if(test_labels==1):
+test_labels= &quot;猫&quot;
+if test_labels==2:
+test_labels= &quot;花&quot;
+if test_labels==3:
+test_labels=&quot;车&quot;    
+return  pred_labels,test_labels
+#图像测试
+import numpy as np
+import os
+import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties
+font = FontProperties(fname=r&quot;c:\windows\Fonts\simsun.ttc&quot;, size=15)
+class_ing = test_set
+test_images,test_labels = next(class_ing)
+#预测test_images的值返回每个类别的概率
+predictions = model.predict(test_images)
+#取类别最大的概率
+predicted_labels = np.argmax(predictions,axis=1)
+#描述图表大小 行列 figize为子图大小 返还一个坐标数组对象即子图对象数组
+fig,axes=plt.subplots(nrows=4,ncols=8,figsize=(15,10))
+#将子图对象数组降到一维
+axes=axes.flatten()
+for i,img in enumerate(test_images):
+#将一个一个子图数据显示在2维平面
+axes[i].imshow(img)
+#设置轴的属性
+axes[i].axis(&#39;off&#39;)
+#为轴上添加标签预测值和真实值
+predicted_new,test_new =transform(predicted_labels[i],np.argmax(test_labels[i]))
+title=&quot;Predicted:&quot;+predicted_new+&quot;\nTrue:&quot;+test_new
+axes[i].set_title(title,color=&quot;white&quot;,fontproperties=font)
+#自动调整子图参数使之与子图标签11对应    
+plt.tight_layout
+#显示图片
+plt.show()
+</code></pre>
+<h3 id="输出效果"><a href="#输出效果" class="headerlink" title="输出效果"></a>输出效果</h3><p><img src="/90904.png" alt="输出效果" title="Magic Gardens"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">颜笙</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/yansheng/20981.html">http://example.com/yansheng/20981.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">颜笙</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/wanye.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/yansheng/16107.html"><img class="next-cover" src="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/yansheng.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">颜笙</div><div class="author-info__description">在茫茫未来 一定能遇到那个你</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yansheng-a/yansheng-a.github.io"><i class="fab fa-github"></i><span>github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><b><font color="#e66b6d">人</font> <font color="#e66d98">生</font> <font color="#e66cc6">无</font> <font color="#cc6de6">常</font> <font color="#9770e6">有</font> <font color="#6d93e6"> </font> <font color="#6fcde6">你</font> <font color="#72e6b6">真</font> <font color="#72e689">好</font> <p align="center"><img src="https://img-blog.csdnimg.cn/f7384c88956d4378b72e47548e19c9f8.gif" width="50" alt="mao"></p> <p align="center">QQ号：1024174747</p></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%B9%E4%BA%8E%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.</span> <span class="toc-text">对于图像识别分类问题的简单实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E6%88%91%E7%9A%84%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81"><span class="toc-number">1.0.1.</span> <span class="toc-text">以下是我的完整代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E6%95%88%E6%9E%9C"><span class="toc-number">1.0.2.</span> <span class="toc-text">输出效果</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/yansheng/20981.html" title="纯小白的第一步"><img src="/img/wanye.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="纯小白的第一步"/></a><div class="content"><a class="title" href="/yansheng/20981.html" title="纯小白的第一步">纯小白的第一步</a><time datetime="2022-10-28T13:43:04.000Z" title="发表于 2022-10-28 21:43:04">2022-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/yansheng/16107.html" title="Hello World"><img src="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/yansheng/16107.html" title="Hello World">Hello World</a><time datetime="2022-10-24T09:25:28.964Z" title="发表于 2022-10-24 17:25:28">2022-10-24</time></div></div></div></div></div></div></main><footer id="footer" style="background: ture"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 颜笙</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="ture"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
   function butterfly_clock_injector_config(){
     var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
     var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
